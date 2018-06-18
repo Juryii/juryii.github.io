@@ -1,7 +1,6 @@
 html, body{
     margin: 0;
     background: #eee;
-    padding-left: 30px;
 }
 
 .faq{
@@ -24,4 +23,7 @@ html, body{
     overflow: hidden;
     display: none;
     padding: 0 15px;
+}
+img{
+    max-width: 100%
 }
