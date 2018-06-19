@@ -53,14 +53,14 @@ gulp.task('clean', function() {
 });
  
 gulp.task('img', function() {
-    return gulp.src('app/2018/toe_examen_4s/img/*') // Берем все изображения из app
+    return gulp.src('app/2018/task/img/*') // Берем все изображения из app
         .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         })))
-        .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
+        .pipe(gulp.dest('dist/task/img')); // Выгружаем на продакшен
 });
  
 gulp.task('build', ['clean', 'img', 'css-libs', 'scripts'], function() {
